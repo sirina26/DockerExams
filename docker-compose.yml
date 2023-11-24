@@ -13,6 +13,8 @@ services:
       - "3000:3000"
     networks:
       - app-network
+    environment:
+      SPECIALIZATION: add
 
   worker:
     build:
@@ -24,6 +26,8 @@ services:
       - "8080:8080"
     networks:
       - app-network
+    environment:
+      SPECIALIZATION: add
 
 networks:
   app-network:

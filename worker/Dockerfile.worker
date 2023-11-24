@@ -5,6 +5,8 @@ WORKDIR /worker
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
+ENV SPECIALIZATION=add
+
 # Install dependencies
 RUN npm install
 
